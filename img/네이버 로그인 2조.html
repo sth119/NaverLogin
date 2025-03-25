@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이미디어 : 로그인</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- #03c75a 네이버 색 -->
+    <header>
+        <div class="form-group" style="padding: 15px; padding: 15px;">
+            <select style="float: right;" name="select1" id="sel1">
+                <option value="value1">한국어</option>
+                <option value="value2">English</option>
+                <option value="value3">中文(简体)</option>
+                <option value="value4">中文(台灣)</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <img src="./네이버_로고.png"
+                style="margin-top: 100px; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20px;"
+                class="d-block">
+        </div>
+    </header>
+
+    
+    <div class="container" style="width: 368px; height: 300px; margin-bottom: 300px; ">
+        <div class="container">
+            <br>
+            <ul style="width: 368px; text-align: center; margin:auto; align-items: center; padding-right: 0px;"
+                class="container nav nav-tabs border-radius: 7px;" role="tablist">
+                <li class="nav-item" style="display: inline-block; width:33.3%; border-radius: 7px;">
+                    <a href="#home" data-toggle="tab" style="text-decoration: none; color:black"
+                        class="nav-link active">ID/전화번호</a>
+                </li>
+                <li class="nav-item border-radius: 7px;" style="width:33.3%">
+                    <a href="#menu1" data-toggle="tab" style="text-decoration: none; color:black" class="nav-link">일회용
+                        번호
+                    </a>
+                </li>
+                <li class="nav-item border-radius: 7px;" style="width:33.3%">
+                    <a href="#menu2" data-toggle="tab" style="text-decoration: none; color:black" class="nav-link">QR코드</a>
+                </li>
+            </ul>
+            <!-- Nav tabs -->
+
+            <div class="tab-content border" style="border-radius: 7px; width: 368px; height: 220px; padding-left: 0px; padding-right: 0px;">
+                <div id="home" class="container tab-pane active">
+                    <br>
+                    <div class="container">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="아이디 또는 전화번호">
+
+                                <input type="password" class="form-control" name="pwd" id="pwd" placeholder="비밀번호">
+                            </div>
+
+                            <span style="text-align: left;" class="form-check">
+                                <label for="form-check-label">
+                                    <input type="checkbox" name="remember" class="form-check-input"> 로그인 상태 유지
+                                </label>
+
+                                <!-- <span style="text-align: right;"> -->
+                                <label style="float: right; text-align: right;" for="">
+                                    <label class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="switch1" name="example">
+                                        <label for="switch1" class="custom-control-label">
+                                        </label>
+                                    </label>
+                                </label>
+                                <label style="float: right;" for="">
+                                    IP 보안 &nbsp;
+                                </label>
+                            </span>
+
+
+                            </span>
+
+                            <button style="background-color: #03c75a; color: white; font-weight: bold;" type="submit"
+                                class="btn container">로그인</button>
+                        </form>
+
+                        <p></p>
+                    </div>
+                </div>
+
+                <div id="menu1" class="container tab-pane" style="margin-bottom: 15px;">
+                    <br>
+                    <div style="text-align: center;">
+                        네이버앱의 <span style="color: #03c75a;"> 메뉴 > 설정 > 로그인 아이디 관리 >
+                            더보기 > 일회용 로그인 번호</span>에 보이는 번호를 입력해 주세요.
+                    </div>
+                    <br>
+                    <input style="margin-bottom: 5px;" type="email" class="form-control" name="email" id="email"
+                        placeholder="번호를 입력하세요">
+                    <button style="background-color: #03c75a; color: white; font-weight: bold;" type="submit"
+                                class="btn container">로그인</button>
+
+                </div>
+
+                <div id="menu2" class="container tab-pane">
+                    <br><br>
+                    <a href="https://www.himedia.co.kr/">
+                        <img src="./하이미디어.jpg" style="display: block; margin: 0 auto;" alt="">
+                    </a>
+                    <br>
+                    <p></p>
+                    <h3 style="text-align: center;">하이미디어에 어서오세요</h3>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; padding-top: 20px;">
+            <span style=" text-decoration: none;">
+                <a href="http://" class="text-secondary font-weight-light" style=" text-decoration: none;"
+                    target="_blank" rel="noopener noreferrer">비밀번호 찾기</a>
+            </span>
+            <span>
+                <a href="http://" class="text-secondary font-weight-light" style="text-decoration: none;"
+                    target="_blank" rel="noopener noreferrer">| 아이디 찾기</a>
+            </span>
+            <span>
+                <a href="http://" class="text-secondary font-weight-light" style=" text-decoration: none;"
+                    target="_blank" rel="noopener noreferrer">| 회원가입</a>
+            </span>
+        </div>
+    </div>
+
+    <footer class="text-secondary font-weight-light" style="text-align: center;">
+        <div>
+            <!-- 발 -->
+            <span>
+                이용약관 | <b>개인정보처리방식</b> | 책임의 한계와 법적고지 | 회원정보 고객센터
+            </span>
+        </div>
+        <div style="margin:auto; align-items: center;" class="copyright-wrap">
+            <span> <img src="./네이버_로고.png" width=70px> Copyright <b>© NAVER Corp.</b> All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <!-- style="margin:auto;" class="d-block" -->
+
+
+</body>
+
+</html>
